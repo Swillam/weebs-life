@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/index.css';
+import Home from './routes/Home';
+import Random from './routes/Random';
+
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+  <Routes>
+    <Route path="/" element={<Home />}>
+    </Route>
+    <Route path="/random" element={<Random />}></Route>
+  </Routes>
+</Router>,
   document.getElementById('root')
 );
 
