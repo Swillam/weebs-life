@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import Home from './routes/Home';
 import Random from './routes/Random';
+import NavBar from './utils/NavbarWL';
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -13,10 +14,10 @@ import {
 
 ReactDOM.render(
   <Router>
+    <NavBar/>
   <Routes>
-    <Route path="/" element={<Home />}>
-    </Route>
-    <Route path="/random" element={<Random />}></Route>
+    <Route path="/" element={<Home />}/>
+    <Route path="/random" element={<Random />}/>
   </Routes>
 </Router>,
   document.getElementById('root')
