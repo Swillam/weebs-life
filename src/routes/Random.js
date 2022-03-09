@@ -32,7 +32,6 @@ function Random() {
         .then(response => response.json())
         .then(data => {
           const manga = parseJson(data.data)
-          console.log(manga)
           setManga(manga)
           setLoading(false);
         })

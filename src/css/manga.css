@@ -8,19 +8,26 @@
     margin: 0 auto;
 }
 
+.Manga img{
+    max-width: 100%;
+    height: auto;
+}
+
 /*.Cover{
     width: 30%;
 }*/
 .Detail{
-    width: 50%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
 }
 .column{
     display: flex;
     justify-content: space-between;
     text-align: start;
 }
+.column > * {
+    flex: auto 1;
+  }
+
 
 p{
     text-align: start;
@@ -28,4 +35,29 @@ p{
 span{
     font-weight: bold;
     font-size: larger;
+    white-space: nowrap;
+}
+
+.MangaCards{
+    padding: 2%;
+    width: 30%;
+    border: solid;
+    border-radius: 2em;
+    margin-bottom: 2%
+}
+
+.MangaCards img {
+    max-width: 100%;
+    height: auto;
+}
+
+h4{
+    font-style: italic;
+}
+
+.favorites{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2%
 }
