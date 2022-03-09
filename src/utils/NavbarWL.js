@@ -1,11 +1,11 @@
-import { Navbar,Nav,Container, NavbarBrand } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
+import '../css/navBar.css'
 
 function NavBar() {
     return (
-    <Navbar bg="dark" variant="dark">
-        <Container>
-          <NavbarBrand href="/"> 
+    <nav>
+          <Link to="/"> 
             <div className='box'>
             <img
                   src={logo}
@@ -14,13 +14,12 @@ function NavBar() {
                 />
                 <span className='navTitle'>WeebsLife</span>
             </div>
-          </NavbarBrand>
-          <Nav className="me-auto">
-            <Nav.Link href="/random">Random</Nav.Link>
-            <Nav.Link href="/favorites">Favorites</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+          </Link>
+          <div>
+            <Link to="/random">Random</Link>
+            <Link to="/favorites">Favorites</Link>
+          </div>
+      </nav>
     );
   }
   

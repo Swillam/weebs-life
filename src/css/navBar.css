@@ -1,0 +1,38 @@
+.navIcon{
+  width:2.5em;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+}
+
+.navTitle{
+  padding-left: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.box {
+  display: flex;
+  align-items:center;
+}
+
+nav{
+  background-color: #343741;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a:hover{
+  color: lightgrey;
+}

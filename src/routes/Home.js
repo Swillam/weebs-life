@@ -1,4 +1,4 @@
-import '../css/App.css';
+import '../css/home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {

@@ -1,0 +1,31 @@
+.Manga{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    width: 70%;
+    border: solid;
+    border-radius: 2em;
+    margin: 0 auto;
+}
+
+/*.Cover{
+    width: 30%;
+}*/
+.Detail{
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+
+p{
+    text-align: start;
+}
+span{
+    font-weight: bold;
+    font-size: larger;
+}
